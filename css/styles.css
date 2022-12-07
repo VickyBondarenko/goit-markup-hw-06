@@ -468,7 +468,11 @@ img {
   margin-top: 5px;
 }
 
-.invite-text {
+.invite {
+  margin-right: 93px;
+}
+.invite-text,
+.newsletter-text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -478,6 +482,7 @@ img {
   color: var(--background-white-color);
   margin-bottom: 20px;
 }
+
 .invite .social-link {
   color: var(--background-white-color);
   background-color: var(--fourth-color);
@@ -493,16 +498,66 @@ img {
 .invite .social-link:focus {
   background-color: var(--accent-color);
 }
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter-input {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  color: var(--background-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--trans-tim-function);
+}
+.newsletter-btn-icon {
+  margin-left: 10px;
+  fill: var(--background-white-color);
+}
 /* Модальне вікно */
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-}
+} */
 
-.is-hidden .modal {
+/* .is-hidden .modal {
   scale: 0;
-}
+} */
 .backdrop {
   position: fixed;
   top: 0;
@@ -525,6 +580,7 @@ img {
   right: 0;
   bottom: 0;
   margin: auto;
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -555,7 +611,101 @@ img {
   fill: #000000;
   display: block;
   margin: 0;
+  transition-property: fill;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--trans-tim-function);
 }
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:hover:focus .modal-btn-icon {
+  fill: var(--accent-color);
+}
+.form-description {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--first-color);
+  margin-bottom: 12px;
+}
+
+.modal-form-input {
+  padding: 12px;
+  padding-left: 42px;
+  height: 40px;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+/* .modal-form-input:focus .modal-form-icon {
+  fill: var(--accent-color);
+} */
+.modal-form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.modal-form-icon {
+  fill: var(--first-color);
+  position: absolute;
+  top: 35px;
+  left: 12px;
+}
+.modal-form-textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.modal-form-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.modal-checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+
+  fill: transparent;
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .modal-checkbox-icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  fill: #ffffff;
+  background-origin: border-box;
+}
+.agreement-link {
+  margin-left: 5px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.modal-form-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*---------------- portfolio------------------------ */
 /* Фільтр */
 
