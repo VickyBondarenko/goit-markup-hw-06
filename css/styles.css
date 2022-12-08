@@ -621,6 +621,10 @@ img {
   transition-timing-function: var(--trans-tim-function);
 }
 
+.modal-btn:hover,
+.modal-btn:hover:focus {
+  cursor: pointer;
+}
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:hover:focus .modal-btn-icon {
   fill: var(--accent-color);
