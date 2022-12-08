@@ -303,31 +303,40 @@
           <use href="./images/sprite.svg#icon-close-black-18dp-2-1">
           </use>
         </svg></button>
-      <p class="form-description">Залиште свої дані, ми вам передзвонимо</p>
+      <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
 
       <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
         <label class="modal-form-label">
-          Ім'я <svg class="modal-form-icon" width="18" height="18">
-            <use href="./images/sprite.svg#icon-person-black"></use>
-          </svg>
-          <input class="modal-form-input" type="name" name="name" />
+          <span>Ім'я</span>
+          <div class="modal-form-input-wrap">
+            <input class="modal-form-input" type="name" name="name" />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person-black"></use>
+            </svg>
+          </div>
         </label>
         <label class="modal-form-label">
-          Телефон <svg class="modal-form-icon" width="18" height="18">
-            <use href="./images/sprite.svg#icon-phone-black"></use>
-          </svg>
-          <input class="modal-form-input" type="tel" name="tel" />
+          <span> Телефон</span>
+          <div class="modal-form-input-wrap">
+            <input class="modal-form-input" type="tel" name="tel" />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-phone-black"></use>
+            </svg>
+          </div>
         </label>
 
         <label class="modal-form-label">
-          Пошта <svg class="modal-form-icon" width="18" height="18">
-            <use href="./images/sprite.svg#icon-email-black"></use>
-          </svg>
-          <input class="modal-form-input" type="email" name="email" />
+          <span>Пошта</span>
+          <div class="modal-form-input-wrap">
+            <input class="modal-form-input" type="email" name="email" />
+            <svg class="modal-form-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-email-black"></use>
+            </svg>
+          </div>
         </label>
 
         <label class="modal-form-label">
-          Коментар
+          <span> Коментар</span>
           <textarea class="modal-form-textarea" name="feedback" rows="7" placeholder="Введіть текст"></textarea>
         </label>
 
