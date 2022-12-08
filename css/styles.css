@@ -662,6 +662,9 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--trans-tim-function);
 }
 .modal-form-input:focus,
 .modal-form-textarea:focus {
@@ -690,6 +693,9 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: var(--trans-dur);
+  transition-timing-function: var(--trans-tim-function);
 }
 .modal-form-textarea::placeholder {
   font-size: 12px;
